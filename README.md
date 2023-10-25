@@ -29,23 +29,29 @@ L'analyse a été divisée en plusieurs étapes clés:
 Pour reproduire l'analyse, vous devez suivre ces étapes:
 
 ### 1. Cloner le dépot 
-
+```bash
 git clone https://github.com/NAMSAGUINE/NAMSAGUINE?search=1
 cd NAMSAGUINE
-
+```
 ### 2. Environnement virtuel (optionnel mais recommandé)
+```bash
 python3 -m venv mon_env
 source mon_env/bin/activate
-
+```
 ### 3. Installer les dépendances
+```bash
 pip install -r requirements.txt
-
+```
 ### 4. Lancer le notebook 
-jupyter notebook 
+```bash
+jupyter notebook
+```
 - Ouvrez le notebook test-technique-AMAGUINE.ipynb et exécutez toutes les cellules.
 ### 5. Conversion du notebook en script Python  (optionnel)
+```bash
 jupyter nbconvert --to script test-technique-AMAGUINE.ipynb
 python test-technique-AMAGUINE.py
+```
 
 - Si vous préférez exécuter le notebook sous forme de script, vous pouvez le convertir en un fichier .py et l'exécuter.
 
